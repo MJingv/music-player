@@ -40,7 +40,12 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+    before(app) {
+      app.get('/api/getRecommend', function (req, res) {
+        console.log(req)
+      })
+    }
   },
 
   build: {

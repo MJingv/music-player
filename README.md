@@ -32,3 +32,5 @@ background-image: url($url + "@2x.png")
 @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
 background-image: url($url + "@3x.png")
 ```
+3.利用jsonp跨域
+对原始jsonp用promise进行封装
